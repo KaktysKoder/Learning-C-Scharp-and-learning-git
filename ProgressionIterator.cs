@@ -5,39 +5,32 @@ namespace SetTypes
 {
     internal class ProgressionIterator : IEnumerator<int>
     {
-        private readonly int _itemCount; //Max count element
-        private int _position; //текщий номер последовательности
-        private int _current;//текщий значение последовательности
+        private readonly int _itemCount;    //Максимальное кол-во чисел в последовательности.
+        private int _position;              //Текущий номер последовательности.
+        private int _current;               //Текщее значение последовательности.
 
         public ProgressionIterator(int itemCount)
         {
             _itemCount = itemCount;
-            _current = 1;
-            _position = 0;
+            _current   = 1;
+            _position  = 0;
         }
 
-        #region Реализация интерфейса IEnumerator<int> IEnumerator
+        #region Реализация интерфейса
         public void Dispose()
         {
-            //заглушка
+            //Заглушка. Нам не надо освобождать ресурсы.
         }
 
+        //Осуществляет движение по последовательности, и вычисляет текущий элемент.
         public bool MoveNext()
         {
-            //MoveNext осущ движение по последовательности и вычисления текущ эл
+            if (_position > 0) _current += 3;
 
-            //Смотрим позиция += 3
-            if (_position > 0)
-            {
-                _current += 3;
-            }
-
-            //проверка на макс лимит
-            if(_position < _itemCount)
+            if (_position < _itemCount)
             {
                 _position++;
 
-                //можем
                 return true;
             }
 
@@ -46,22 +39,13 @@ namespace SetTypes
 
         public void Reset()
         {
-            //сброс состояния
             _position = 0;
             _current = 1;
         }
 
-        public int Current
-        {
-            //возвращает содержимое переменной текщий значение последовательности
-            get { return _current; }
-        }
+        public int Current { get => _current; }
 
-        object IEnumerator.Current
-        {
-            //Необобщ форма вызывает обобщ форму
-            get { return Current; }
-        }
+        object IEnumerator.Current { get => Current; }
 
         #endregion
     }
