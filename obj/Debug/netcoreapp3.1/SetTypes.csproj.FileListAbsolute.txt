@@ -1,0 +1,13 @@
+F:\WorkInC#\SetTypes\bin\Debug\netcoreapp3.1\SetTypes.exe
+F:\WorkInC#\SetTypes\bin\Debug\netcoreapp3.1\SetTypes.deps.json
+F:\WorkInC#\SetTypes\bin\Debug\netcoreapp3.1\SetTypes.runtimeconfig.json
+F:\WorkInC#\SetTypes\bin\Debug\netcoreapp3.1\SetTypes.runtimeconfig.dev.json
+F:\WorkInC#\SetTypes\bin\Debug\netcoreapp3.1\SetTypes.dll
+F:\WorkInC#\SetTypes\bin\Debug\netcoreapp3.1\SetTypes.pdb
+F:\WorkInC#\SetTypes\obj\Debug\netcoreapp3.1\SetTypes.csprojAssemblyReference.cache
+F:\WorkInC#\SetTypes\obj\Debug\netcoreapp3.1\SetTypes.AssemblyInfoInputs.cache
+F:\WorkInC#\SetTypes\obj\Debug\netcoreapp3.1\SetTypes.AssemblyInfo.cs
+F:\WorkInC#\SetTypes\obj\Debug\netcoreapp3.1\SetTypes.csproj.CoreCompileInputs.cache
+F:\WorkInC#\SetTypes\obj\Debug\netcoreapp3.1\SetTypes.dll
+F:\WorkInC#\SetTypes\obj\Debug\netcoreapp3.1\SetTypes.pdb
+F:\WorkInC#\SetTypes\obj\Debug\netcoreapp3.1\SetTypes.genruntimeconfig.cache
