@@ -14,7 +14,16 @@ namespace SetTypes
 
         public IEnumerator<int> GetEnumerator()
         {
-            return new ProgressionIterator(_itemCount);
+            int current = 1;
+
+            for (int i = 0; i < _itemCount - 1; i++)
+            {
+                if (i == 0) yield return 1;
+
+                current += 3;
+
+                yield return current;
+            }
         }
 
         IEnumerator IEnumerable.GetEnumerator()
