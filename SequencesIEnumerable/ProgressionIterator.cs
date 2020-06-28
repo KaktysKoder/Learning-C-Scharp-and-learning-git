@@ -1,4 +1,6 @@
-﻿using System.Collections;
+﻿//Реализация арифметической прогрессии с шагом 3, используя класс итератор.
+
+using System.Collections;
 using System.Collections.Generic;
 
 namespace SetTypes
@@ -40,13 +42,12 @@ namespace SetTypes
         public void Reset()
         {
             _position = 0;
-            _current = 1;
+            _current  = 1;
         }
 
         public int Current { get => _current; }
 
         object IEnumerator.Current { get => Current; }
-
         #endregion
     }
 }
