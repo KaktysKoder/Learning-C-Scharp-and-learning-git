@@ -1,4 +1,5 @@
 ﻿using System;
+using SetTypes.ICollection;
 
 namespace SetTypes
 {
@@ -6,7 +7,7 @@ namespace SetTypes
     {
         private static void Main()
         {
-            SequencesIEnumerableTest();
+            ICollectionTest();
 
             Console.ReadLine();
         }
@@ -19,6 +20,19 @@ namespace SetTypes
             {
                   //Console.Write($"{i} ");
                 Console.WriteLine($"{i} ");
+            }
+        }
+        
+        private static void ICollectionTest()
+        {
+            StoreCollection collection = new StoreCollection(@"F:\test.txt");
+
+            collection.Add(2020);
+            collection.Remove(2020);
+
+            foreach(int i in collection)
+            {
+                Console.WriteLine(i);
             }
         }
     }
